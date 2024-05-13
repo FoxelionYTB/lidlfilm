@@ -1,0 +1,161 @@
+:root {
+    --dark-grey: rgb(35, 37, 44);
+}
+
+body {
+    margin: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    height: 250px;
+    background-color: rgb(13, 255, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.header-bg {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    bottom: -5px;
+    right: -5px;
+    background-image: url("header.jpg");
+    background-size: cover;
+    background-position-y: 10%;
+}
+
+.header-title {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1;
+    color: white;
+    font-size: 10em;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.7);
+}
+
+nav {
+    height: 55px;
+    background-color: var(--dark-grey);
+    display: flex;
+    color:  white;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.menu-item {
+    font-size: 1.2em;
+    padding: 0px 30px;
+    padding-bottom: 8px;
+    padding-top: 12px;
+    border-radius: 8px;
+    transition-duration: .5s;
+    cursor:pointer;
+}
+
+main {
+    background-color: rgb(63, 63, 70);
+    color: white;
+    flex-grow: 1;
+    font-size: 2em; 
+}
+
+.synopsis {
+    max-width: 1000px;
+    margin:auto
+}
+
+.divider {
+    height: 60%;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+footer {
+    background-color: var(--dark-grey);
+    padding: 15px;
+    color: white;
+    font-weight: 300;
+    text-align: right;
+}
+
+
+.menu-active {
+    color: gray;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.trailer{
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.trailer > iframe{
+    box-shadow: 5px 5px 1px white;
+}
+
+.card {
+    padding: 10px;
+    background: rgb(26, 28, 34);
+    width: 500px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 7px;
+    display: flex;
+}
+
+.photo {
+    width: 130px;
+    height: 130px;
+    border-radius: 7px;
+    background-size: cover;
+    background-position: center center;
+}
+
+#panikourilova > .photo {
+    background-image: url("panikourilova.jpg");
+}
+
+#pandoybal > .photo {
+    background-image: url("pandoybal.jpeg");
+}
+
+#foukac > .photo {
+    background-image: url("foukac.jpeg");
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.name {
+    font-size: 2.1em;
+    font-weight: 400;
+    color: rgb(237, 108, 108);
+}
+
+.actor {
+    font-size: 1.2em;
+}
